@@ -1,0 +1,53 @@
+  	div{
+		margin: auto;
+		background: gray;
+	}
+  	a{
+		text-decoration: none;
+	}
+	p{
+		font-weight: bold;
+		text-align: center;
+		font-size: 2vh;
+	}
+	#p1{
+		color: red;
+	}
+	#p2{
+		color: rgba(255,255,135,0);
+		/*background: black;*/
+		/*font-weight: 2vh;*/
+		font-family: "楷体";
+	}
+	/*#a1:hover+#a2 #p2{
+		animation: Tshow 2s linear;
+	}*/
+	#a1:hover+#a2 #p2{
+		animation: Tds 3s infinite;
+		color: rgba(255,255,135,1);
+	}
+	@keyframes Tshow{
+		0%{
+			color: rgba(255,255,135,0);
+		}
+		100%{
+			color: rgba(255,255,135,1);
+		}
+	}
+	@keyframes Tds{
+		0%{
+			font-size: 2vh;
+		}
+		25%{
+			font-size: 3vh;
+		}
+		50%{
+			font-size: 2vh;
+		}
+		75%{
+			font-size: 3vh;
+		}
+		100%{
+			font-size: 2vh;
+		}
+	}
